@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+</head>
+<body>
+
+<style>
+    html {
+        font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+
+    div {
+        border: 1px solid;
+        padding-left: 9px;
+        width: 400px;
+        box-shadow: 0px 0px 12px 5px dodgerblue;
+    }
+
+    h2 {
+        margin-top: 14px;
+    }
+</style>
+<div>
+<form action="" method="get">
+    <h2>Order form</h2>
+    <label for="fruit">What would you like to buy?</label><br>
+    <select name="favorite fruit" id="fruit">
+    <option value="orange">Orange</option>
+    <option value="apple">Apple</option>
+    <option value="mango">Mango</option>
+    <option value="banana">Banana</option>
+    <option value="kiwi">Kiwi</option>
+    </select>
+
+    <p>How many would you like to order?</p>
+    <label><input type="radio" name="amount" value="1 - $10"> 1 - $10 </label><br>
+    <label><input type="radio" name="amount" value="2 - $20"> 2 - $20 </label><br>
+    <label><input type="radio" name="amount" value="3 - $25"> 3 - $25 </label>
+
+
+    <p>Name <span style="color: red" >*</span> </p>
+    <input type="text" placeholder="FirstName" name="firstname">
+    <input type="text" placeholder="LastName" name="lastname">
+
+    <p>Email</p>
+    <input type="email" name="Email" size="40" >
+
+    <p>Phone number</p>
+    <input type="text" name="number1" size="6"> -
+    <input type="text" name="number2" size="6"> -
+    <input type="text" name="number3" size="6">
+
+    <p><input type="submit" name="submit" value="Submit"></p>
+
+</form>
+</div>
+</body>
+</html>
